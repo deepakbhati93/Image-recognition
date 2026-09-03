@@ -17,6 +17,16 @@ import os
 import numpy as np
 import streamlit as st
 from PIL import Image
+import streamlit as st
+
+st.set_page_config(
+    page_title="Image Recognition System", # Changes the tab title text
+    page_icon="📷",                         # Optional: changes the icon next to the text
+    layout="wide"                          # Optional: sets page width
+)
+
+# Rest of your app code goes below...
+st.title("Image Recognition System")
 # Attempt to import MobileNetV2 helpers from tensorflow.keras first,
 # then fall back to standalone keras if necessary (some environments
 # separate `keras` from `tensorflow` or have different packaging).
